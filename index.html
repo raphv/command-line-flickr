@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>The Flickr Bulletin Board, a.k.a. Command-Line Flickr</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="rcommand.js"></script>
+		<script type="text/javascript" src="clflickr.js"></script>
+<script type="text/javascript">
+	
+$(document).ready( function() {
+	rc_initialise();
+	clf_initialise();
+
+	});
+</script>
+	</head>
+	<body>
+		<form name="formulaire" onsubmit="rc_interprete(); return false;" />
+			<div id="fenetre">
+				<div id="titre">Command-Line Flickr by <a href="http://github.com/raphV" target=_new">RaphV</a></div>
+				<div id="lignes">
+				</div>
+				<div id="lignefin" class="ligne"></div>
+				<input id="entree" type="texte" value=""/>
+			</div>
+			<input id="envoi" type="submit" />
+		</form>
+	</body>
+</html>
